@@ -1,5 +1,3 @@
-# GenomeBiol_H3K36me_Shipman
-
 * The following programs are required:
   * [deepTools](https://github.com/deeptools/deepTools)
   * [pyGenomeTracks](https://github.com/deeptools/pyGenomeTracks)
