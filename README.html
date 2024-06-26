@@ -409,12 +409,18 @@ display: none;
 </ul></li>
 <li>The scripts below should be ran to pre-process a number of files
 <ul>
-<li><code>norm_bw.sh</code> provides examples of how to generate the
-normalized bigWigs used to generate the figures, including
+<li><code>generate_norm_bw.sh</code> provides examples of how to
+generate the normalized bigWigs used to generate the figures, including
 depth-normalized bigWigs <code>.cpm.bw</code> and input-normalized
 bigWigs <code>.input_normalized.log2cpm.bw</code>. Furthermore, it
 provides an example of how replicates (in bigWig format) were
 merged.</li>
+<li><code>mass_spec_norm_bw.R</code> demonstrates how to use
+mass-spectrometry values to quantitatively scale the depth-normalized
+bigWigs.</li>
+<li><code>generate_binned_BED_file.sh</code> demonstrates how to
+generated 1kb and 10kb binned <code>BED</code> files from aligned
+<code>BAM</code> files.</li>
 </ul></li>
 <li>Certain figures as generated here will largely resemble but are not
 exactly the same as ones included in the manuscript, as those have had

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-make_tracks_file --trackFiles 10T.PA_merged.H3K36me2.ms_cpm.bw 10T.NSD1KO_merged.H3K36me2.ms_cpm.bw 10T.NSD2KO_merged.H3K36me2.ms_cpm.bw 10T.DKO_merged.H3K36me2.ms_cpm.bw 10T.K36M_OE_merged.H3K36me2.ms_cpm.bw 10T.TKO_merged.H3K36me2.ms_cpm.bw 10T.QKO_merged.H3K36me2.ms_cpm.bw 10T.QuiKO_merged.H3K36me2.ms_cpm.bw mm10.ncbiRefSeq.gtf -o data/3a.ini
+make_tracks_file --trackFiles 10T.PA.K36me1.merged.ms_cpm.bw 10T.K36M.K36me1.merged.ms_cpm.bw 10T.DKO.K36me1.merged.ms_cpm.bw 10T.TKO.K36me1.merged.ms_cpm.bw 10T.QKO.K36me1.merged.ms_cpm.bw 10T.QuiKO.K36me1.merged.ms_cpm.bw mm10.ncbiRefSeq.gtf -o 3a.ini
 
-pyGenomeTracks --tracks data/3a.ini --region chr3:27,139,141-27,204,558 -o figs/3a.pdf
+pyGenomeTracks --tracks 3a.ini --region chr14:55,418,448-61,853,143 --dpi 600 -o 3a.png 

@@ -1,6 +1,8 @@
 * The following programs are required:
   * [deepTools](https://github.com/deeptools/deepTools)
   * [pyGenomeTracks](https://github.com/deeptools/pyGenomeTracks)
+  * [SPAN](https://github.com/JetBrains-Research/span)
+  * [featureCounts](https://subread.sourceforge.net/featureCounts.html)
   * [R](https://cran.r-project.org/)
     * Bioconductor
       * AnnotationDbi
@@ -46,4 +48,8 @@
       * viridis
 * The scripts below should be ran to pre-process a number of files 
   * `generate_norm_bw.sh` provides examples of how to generate the normalized bigWigs used to generate the figures, including depth-normalized bigWigs <code>.cpm.bw</code> and input-normalized bigWigs <code>.input_normalized.log2cpm.bw</code>. Furthermore, it provides an example of how replicates (in bigWig format) were merged.
-* Certain figures as generated here will largely resemble but are not exactly the same as ones included in the manuscript, as those have had additional manual aesthetic adjustments. Additionally, some minor discrepancies may arise due to a degree of stochasticity in particular algorithms, but they do not impact the conclusions presented
+  * `mass_spec_norm_bw.R` demonstrates how to use mass-spectrometry values to quantitatively scale the depth-normalized bigWigs. 
+  * `generate_binned_BED_file.sh` demonstrates how to generate 1kb and 10kb binned <code>BED</code> files from aligned <code>BAM</code> files.
+  * `generate_tables_for_metagene_body_plots.md` demonstrates how to generate tables needed for plotting meta-gene body plots.
+  * `compute_exon_intron_ratios.sh` computes exon versus intron ratios for a given aligned ChIP-seq sample file. This step will have to be run prior to generating the exon-intron ratio plots in R. 
+* Certain figures as generated here will largely resemble but are not exactly the same as ones included in the manuscript, as those have had additional manual aesthetic adjustments. Additionally, some minor discrepancies may arise due to a degree of stochasticity in particular algorithms, but they do not impact the conclusions presented.
