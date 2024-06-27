@@ -3,6 +3,7 @@
   * [pyGenomeTracks](https://github.com/deeptools/pyGenomeTracks)
   * [SPAN](https://github.com/JetBrains-Research/span)
   * [featureCounts](https://subread.sourceforge.net/featureCounts.html)
+  * [HOMER](http://homer.ucsd.edu/homer/ngs/peakMotifs.html)
   * [R](https://cran.r-project.org/)
     * Bioconductor
       * AnnotationDbi
