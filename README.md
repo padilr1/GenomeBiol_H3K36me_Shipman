@@ -2,6 +2,8 @@ Created by Reinnier Padilla.
 
 Copyright (C) 2024 Reinnier Padilla
 
+---
+
 * The following programs are required:
   * [deepTools](https://github.com/deeptools/deepTools)
   * [pyGenomeTracks](https://github.com/deeptools/pyGenomeTracks)
