@@ -30,7 +30,7 @@ s <- data.frame(samp=samp,
 p <- p %>% rows_insert(s)
 
 # after running the previous scripts for all samples, then refactor the dataframe based on desired order of samples
-p$condition <- factor(p$condition,levels=c("QuiKO","QKO","TKO","K36M-OE","DKO","NSD3KO","NSD2KO","NSD1KO","SETD2KO","ASH1LKO","PA"))
+p$condition <- factor(p$condition,levels=c("QuiKO","QKO","TKO","K36M-OE","DKO","NSD2KO","NSD1KO","PA"))
 
 stats <- aggregate(score ~ condition, p, function(x) c(mean = mean(x), sd = sd(x)))
 
@@ -40,7 +40,7 @@ ggplot() + stat_summary(mapping=aes(x=condition,y=score,fill=condition),data = p
   geom_jitter(mapping=aes(x=condition,y=score,fill=condition),data = p,show.legend = FALSE,size=0.7) +
   geom_errorbar(mapping = aes(y=mean,x=condition,ymin = mean - sd, ymax = mean + sd),data = s, width = 0.2) +
   coord_flip() +
-  scale_fill_manual(values=c("maroon3","orange","khaki","chocolate4","grey33","yellow4","purple","cyan","hotpink","greenyellow","blue")) +
+  scale_fill_manual(values=c("maroon3","orange","khaki","chocolate4","grey33","purple","cyan","blue")) +
   labs(x="",y="") +
   theme(
     panel.grid.major = element_blank(),
@@ -53,4 +53,4 @@ ggplot() + stat_summary(mapping=aes(x=condition,y=score,fill=condition),data = p
     strip.text.x = element_text(size = 9),
     plot.margin=unit(c(0,0,0,0), "cm"))
 
-ggsave(filename = "4c.pdf",path="figs",device = "pdf",units = "cm",width = 5.5,height=6,dpi = 600,bg="white")
+ggsave(filename = "4c.pdf",path="figs",device = "pdf",dpi = 600,bg="white")

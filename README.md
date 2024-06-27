@@ -22,6 +22,8 @@
       * sva
       * tximport
       * zFPKM
+      * grid
+      * gridExtra
     * CRAN
       * MASS
       * cowplot
@@ -53,4 +55,4 @@
   * `generate_binned_BED_file.sh` demonstrates how to generate 1kb and 10kb binned <code>BED</code> files from aligned <code>BAM</code> files.
   * `generate_tables_for_metagene_body_plots.md` demonstrates how to generate tables needed for plotting meta-gene body plots.
   * `compute_exon_intron_ratios.sh` computes exon versus intron ratios for a given aligned ChIP-seq sample file. This step will have to be run prior to generating the exon-intron ratio plots in R. 
-* Certain figures as generated here will largely resemble but are not exactly the same as ones included in the manuscript, as those have had additional manual aesthetic adjustments. Additionally, some minor discrepancies may arise due to a degree of stochasticity in particular algorithms, but they do not impact the conclusions presented.
+* Figures generated using the scripts above will largely resemble the figures included in the manuscript. However, there may be minor discrepancies as a result of stochasticity in specific algorithms as well as additional manual aesthetic adjustments. Nevertheless, these minor differences do not impact the conclusions presented.
